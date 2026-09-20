@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr size="5" color="orange"> 
+    <h2 style="color: blue;" align = "center"> Pizza Shop 2.0 </h2>
+    <hr size="5" color="green">
+
+    <form action="Task-1.html" target = "blank" style="background-color: skyblue;">
+        <fieldset>
+            <legend> Customer Detail </legend>
+
+            <table style="background-color: pink;" align="center" width = "50%">
+                <tr>
+                    <th align="right"> Name: </th>
+                    <td> <input type = "text" name = "name" minlength = "3" maxlength  ="10" placeholder = "Enter Your Name"/></td>
+                </tr>
+                <tr>
+                    <th align="right"> Mobile Number: </th>
+                    <td> <input type = "tel" name = "mobile" placeholder = "Enter your Mobile Number" minlength="8" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <th align="right"> Address: </th>
+                    <td> <textarea placeholder = "Enter Your Address" cols = "21" rows = "5"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend> Pizza Topping Detail</legend>
+            <table style = "background-color: rgb(255, 240, 192);" align = "center" width = "50%">
+                <tr>
+                    <th align = "right"> Pizza Type: </th>
+                    <td> 
+                        <table>
+                            <tr>
+                                <td>
+                                <input type = "checkbox" name = "pizza" value = "Supreme"/> Supreme 
+                                </td>
+                                <td>
+                                Qt.<input type = "number" name = "qty_supreme" min = "1" max = "10"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <input type = "checkbox" name = "pizza" value = "Vegetarian"/> Vegetarian 
+                                </td>
+                                <td>
+                                Qt.<input type = "number" name = "qty_vegetarian" min = "1" max = "10"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <input type = "checkbox" name = "pizza" value = "Farmville"/> Farmville 
+                                </td>
+                                <td>
+                                Qt.<input type = "number" name = "qty_farmville" min = "1" max = "10"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>    
+                </tr>
+                <tr>
+                    <th align = "right"> Pizza Size: </th>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type = "radio" name = "size" value = "Small"/> Small
+                                    <input type = "radio" name = "size" value = "Medium"/> Medium
+                                    <input type = "radio" name = "size" value = "Large"/> Large
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th align = "right"> Pizza Sauce: </th>
+                    <td>
+                        <select name = "sauce">
+                            <option selected disabled hidden>--Sauce Type--</option>
+                            <option value = "Tomato"> Tomato </option>
+                            <option value = "Chilly"> Chilly </option> 
+                            <option value = "BBQ"> BBQ </option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align = "right"> Extra Topping </th>
+                    <td>
+                        <table style="background-color: rgb(255, 215, 192);">
+                            <tr>
+                                <td> <input type = "checkbox" name = "topping" value = "Cheese"/> Cheese </td>
+                                <td> <input type = "checkbox" name = "topping" value = "Extra veg."/> Extra Veg. </td>
+                            </tr>
+                            <tr>
+                                <td> <input type = "checkbox" name = "topping" value = "Roasted Broccoli"/> Roasted Broccoli </td>
+                                <td> <input type = "checkbox" name = "topping" value = "Black olives"/> Black olives </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "center" colspan = "4">
+                        <b> Delivery Instruction </b>
+                        <br>
+                        <textarea name = "instruction" rows = "4" cols = "60"> </textarea>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "center" colspan = "4">
+                        <input type = "submit" value = "Send my order"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
