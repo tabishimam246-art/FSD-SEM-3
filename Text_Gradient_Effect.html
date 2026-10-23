@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rainbow {
+            from {
+                background-position: left;
+            }
+            to {
+                background-position: right;
+            }
+        }
+        .name {
+            height: 200px;
+            width: 100%;
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            background-clip: text;
+            background-size: 300% 100%;
+            color: transparent;
+            font: 50px solid;
+            animation-name: rainbow;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "name"> Tabish </div>
+</body>
+</html>
