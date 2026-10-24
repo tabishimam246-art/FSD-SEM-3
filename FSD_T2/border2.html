@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 150px;
+            margin: 30px auto;
+            padding: 60px;
+            border: 4px solid teal;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px gray;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        .box2 {
+            width: 300px;
+            height: 150px;
+            margin: 30px auto;
+            padding: 60px;
+            border: 4px solid teal;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 15px gray;
+            background-color: pink;
+            text-align: center;
+        }
+        .box3 {
+            border-style: solid;
+            border-width: 35px 10em 10%;
+            border-radius: 35px 10em 10%;
+            border-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class = "box1"> Box-1 - content- box selected
+        <br> Width and height include content only
+    </div>
+    <div class = "box2"> Box-2 - border- box selected
+        <br> Width and height include content c+p+b
+    </div>
+    <h1 class = "box3"> Hello </h1>
+</body>
+</html>

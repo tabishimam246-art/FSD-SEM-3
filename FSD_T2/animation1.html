@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes hello {
+            /* from {background-color: pink;}
+            to {background-color: cyan;}  */
+            0% {background-color: red; top: 0px; left: 0px;}
+            25% {background-color: blue; top: 0px; left: 600px; border-radius: 50px;}
+            50% {background-color: green; top: 600px; left: 600px;}
+            75% {background-color: yellow; top: 600px; left: 0px; border-radius: 50px}
+            100% {background-color: red; top: 0px; left: 0px;}
+        }
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            animation-name: hello;
+            animation-duration: 5s;
+            position: relative; 
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class = "ball"></div>
+</body>
+</html>

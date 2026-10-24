@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel = "stylesheet" type = "text/css"/>
+    <style>
+        /* p {color: blue; font-size: 20}
+        .a{color: tomato}
+        #b{color: green; background-color: red;} */
+        /* *{text-decoration: underline;} */
+        input[type = "text"]{width: 300px; background-color: pink;}
+        input[type = "button"]{background-color: orange; color: blue;}
+        a[target = "_blank"]{color: blueviolet; font-size: x-large; text-decoration: none;}
+        ul b{
+            font-size: 20px;
+            color: blue
+        }
+        h1, h3{
+            color: white;
+            background-color: blue;
+        }
+        div > p{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body style="background-color: cyan;">
+    <h1> Good Morning </h1>
+    <p> Hello </p>
+    <p class = "a"> Hi </p>
+    <p id = "b"> How r u?</p>
+    <h3 class = "a"> I am class </h3>
+    <h3 id = "b"> can't use </h3>
+    <p class = "a" id = "b"> which selector apply? </p>
+    <p id = "b" class = "a"> H </p>
+    <form action = "index.html" method = "get" target = "_blank">
+        Name: <input type = "text" name = "fname"/>
+        <br><br>Email: <input type = "email" name = "fmail"/>
+        <br><br> <input type = "button" name = "submit" value = "Submit"/>
+    </form>
+    <a href = "#" target = "_blank"> See Me </a>
+    <a href = "#"> I am self </a>
+    <h3> Descendant Selector </h3> 
+    <ul>
+        <li><b> ABC </b></li>
+        <li> xyz </li>
+        <b><li> pqr </li></b>
+        <li><b> mno </b></li>
+    </ul>
+    <h1> Grouping </h1>
+    <div>
+        <p> Hi </p>
+    </div>
+    <p> Hello </p>
+    <p>
+        <div>
+            I am inside p
+        </div>
+    </p>
+</body>
+</html>

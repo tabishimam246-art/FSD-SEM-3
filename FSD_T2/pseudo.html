@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* button {
+            color: blue;
+            background-color: gold;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            color: white;
+            background-color: silver;
+        }
+        button:active {
+            color: red;
+            background-color: silver;
+        }
+        input:focus {
+            background-color: pink;
+            border: 1px solid red;
+        }
+        ul li:nth-child(2) {
+            color: red;
+            font-weight: bold;
+        }
+        ul li:not(.special) {
+            font-style: italic;
+            background-color: aqua;
+        }
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: yellow;
+        }
+        a:hover {
+            color: green;
+        }
+        a:active {
+            color: blue
+        } */
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+        div:hover {
+            background-color: tomato;
+        }
+        .a:hover {
+            border: 5px solid black;
+            color: red;
+        }
+        h1:active {
+            color: blue;
+            font-size: 50px;
+        }
+        input[type = "checkbox"]:checked+label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button type = "submit"> Click me </button>
+    <input type = "text" placeholder="Click to focus"/>
+    <ul>
+        <li> ABC </li>
+        <li> pqr </li>
+        <li class = "special"> ops </li>
+        <li> Hi  </li>
+    </ul>
+    <a href = "https://www.google.com" target = "_blank"> Click me to see effect </a>
+    <h1> CSS Pseudo-class Practice </h1>
+    <div></div>
+    <p class = "a"> Hello </p>
+    <input type = "checkbox" id = "abc"/>
+    <label for = "abc"> Subscribe for news </label>
+</body>
+</html>

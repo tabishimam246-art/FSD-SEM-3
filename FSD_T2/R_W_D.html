@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display: block;
+        }
+        @media only screen and (max-width: 500px) {
+            .a {
+                display: none;
+            }
+        }
+        @media only screen  and (min-width: 500px) and (max-width: 1000px) {
+            .a {
+                width: 250px;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            .a {
+                width: 500px;
+            }
+        }
+        .outer {
+            background-color: tomato;
+            display: flex;
+            height: 50px;
+            width: 100%;
+        }
+        .inner {
+            display: inline;
+            color: white;
+            height: 50px;
+            width: 50px;
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+        }
+        .inner:hover {
+            background-color: white;
+            color: black;
+        }
+        @media only screen and (max-width: 600px) {
+            .outer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+            .inner {
+                width: 100%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <img src = "animation.gif" class = "a"/>
+    <h1> Responsive Web Design Task 3</h1>
+    <div class = "outer">
+        <a href = "#" class = "inner"> Link </a>
+        <a href = "#" class = "inner"> Link </a>
+        <a href = "#" class = "inner"> Link </a>
+    </div>
+</body>
+</html>

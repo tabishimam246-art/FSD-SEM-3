@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+            top: 200px;
+            left: 100px;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 2s;
+        }
+        .ball1 {
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+            top: 200px;
+            left: 120px;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 2s;
+            animation-delay: 1s;
+        }
+        @keyframes bounce {
+            from {
+                transform: translateY(-150px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(150px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "ball"></div>
+    <div class = "ball1"></div>
+</body>
+</html>
